@@ -1,6 +1,6 @@
 
 
-import { Box, Paper, Table, TableContainer,TableHead,TableBody,TableCell, TableRow } from '@mui/material'
+import { Box, Paper, Table, TableContainer,TableHead,TableBody,TableCell, TableRow, Typography } from '@mui/material'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { baseUrl } from '../bashUrl'
@@ -40,6 +40,11 @@ import moment from 'moment'
     }}
     component={Paper}
   >
+    <Typography 
+     variant='h5'
+    >
+        My Booking
+    </Typography>
     <TableContainer>
       <Table>
         <TableHead>
